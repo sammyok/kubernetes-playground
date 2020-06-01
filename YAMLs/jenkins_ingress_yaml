@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jenkins.local
+spec:
+  rules:
+    - host: jenkins.local
+      http:
+        paths:
+        - backend:
+            serviceName: jenkins
+            servicePort: 8080
+          path: /

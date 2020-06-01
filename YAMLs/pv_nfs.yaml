@@ -8,5 +8,5 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    path: /data01/nfs/
+    path: /data01/nfs/mysql/
     server: 192.168.18.250
